@@ -8,6 +8,11 @@ import java.util.concurrent.*;
 import java.util.stream.Stream;
 
 
+/**
+ * Класс предназначен для индексации текстовых файлов и поиска релевантных файлов, содержащих определённое слово,
+ * по составленному индексу.
+ * Индексация файлов происходит асинхронно в пуле потоков.
+ */
 public class Index {
     TreeMap<String, List<Pointer>> invertedIndex;
 
